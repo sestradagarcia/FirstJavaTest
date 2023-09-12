@@ -41,7 +41,7 @@ public class Garage {
 
     public void removeVehicleByType(String className ) {
         for (Vehicle v : vehicles) {
-            vehicles.removeIf(vehicle -> v.getClass().getSimpleName().equals(className));
+            vehicles.removeIf(vehicle -> (vehicle.getClass().getSimpleName()).equals(className));
         }
     }
 

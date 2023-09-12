@@ -3,7 +3,6 @@ package VehicleInherticance;
 public class Runner {
     public static void main(String[] args) {
         Car car1 = new Car("audi", 4);
-        Car car2 = new Car("kia", 5);
 
         Plane plane1 = new Plane("idk", 9);
 
@@ -22,7 +21,10 @@ public class Runner {
         garage1.displayVehiclesInside();
         garage1.removeVehicle(1);
         garage1.displayVehiclesInside();
+        Car car2 = new Car("kia", 5);
         garage1.addVehicle(car2);
+        garage1.displayVehiclesInside();
+        garage1.removeVehicleByType("Car");
         garage1.displayVehiclesInside();
 
     }
