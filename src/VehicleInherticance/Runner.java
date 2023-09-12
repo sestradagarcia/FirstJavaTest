@@ -23,8 +23,7 @@ public class Runner {
         garage1.removeVehicle(1);
         garage1.displayVehiclesInside();
         garage1.addVehicle(car2);
-        Car c = new Car();
-        garage1.removeVehicleByType();
+        garage1.displayVehiclesInside();
 
     }
 }

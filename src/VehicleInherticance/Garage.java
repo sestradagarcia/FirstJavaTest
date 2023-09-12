@@ -39,10 +39,10 @@ public class Garage {
         }
     }
 
-    Car c = (Car)new Vehicle();
-
-    public void removeVehicleByType(Object V ) {
-        vehicles.removeIf(Objects::nonNull);
+    public void removeVehicleByType(String className ) {
+        for (Vehicle v : vehicles) {
+            vehicles.removeIf(vehicle -> v.getClass().getSimpleName().equals(className));
+        }
     }
 
 
