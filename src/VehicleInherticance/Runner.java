@@ -24,6 +24,8 @@ public class Runner {
         Car car2 = new Car("kia", 5);
         garage1.addVehicle(car2);
         garage1.displayVehiclesInside();
+        garage1.bill();
+        System.out.println(car1.getPrice());
         garage1.removeVehicleByType("Car");
         garage1.displayVehiclesInside();
 
