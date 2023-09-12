@@ -2,8 +2,6 @@ package VehicleInherticance;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 public class Garage {
     List<Vehicle> vehicles;
 
@@ -21,7 +19,7 @@ public class Garage {
     }
 
     public void displayVehiclesInside() {
-        System.out.print("The vehicles in this garage are: ");
+        System.out.print("\nThe vehicles in this garage are: ");
         for (Vehicle v : vehicles) {
             System.out.print(v.toString() + "  and has id " + v.getId() + " , ");
         }
@@ -40,9 +38,7 @@ public class Garage {
     }
 
     public void removeVehicleByType(String className ) {
-        for (Vehicle v : vehicles) {
-            vehicles.removeIf(vehicle -> (vehicle.getClass().getSimpleName()).equals(className));
-        }
+        vehicles.removeIf(vehicle -> (vehicle.getClass().getSimpleName()).equals(className));
     }
 
 
