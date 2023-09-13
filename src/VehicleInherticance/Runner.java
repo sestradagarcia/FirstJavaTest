@@ -31,7 +31,9 @@ public class Runner {
         System.out.println(car1.getPrice());
         garage1.removeVehicleByType("Car");
         garage1.displayVehiclesInside();*/
-        List<Flyable> flyables = new ArrayList<>();
+
+
+        /*List<Flyable> flyables = new ArrayList<>();
 
         Bird b1 = new Bird();
         Plane p1 = new Plane("idk", 9);
@@ -41,7 +43,17 @@ public class Runner {
 
         for(Flyable f: flyables){
             System.out.println(f.fly());
-        }
+        }*/
+
+        Shed<Vehicle> vehicleShed = new Shed<>();
+        vehicleShed.setVehicle(car1);
+        System.out.println(vehicleShed.getVehicle());
+        vehicleShed.store(car1);
+        vehicleShed.store(plane1);
+        vehicleShed.store(motorbike1);
+        System.out.println(vehicleShed.getVehicles());
+        System.out.println(vehicleShed.vehicles.get(0));
+
 
     }
 }

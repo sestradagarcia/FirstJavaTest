@@ -3,11 +3,7 @@ package VehicleInherticance;
 import java.util.ArrayList;
 import java.util.List;
 public class Garage {
-    List<Vehicle> vehicles;
-
-    public Garage() {
-        this.vehicles = new ArrayList<>();
-    }
+    List<Vehicle> vehicles= new ArrayList<>();
 
     public void addVehicle(Vehicle vehicle) {
         vehicles.add(vehicle);
