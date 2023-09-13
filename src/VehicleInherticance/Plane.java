@@ -1,6 +1,6 @@
 package VehicleInherticance;
 
-public class Plane  extends Vehicle{
+public class Plane  extends Vehicle implements Flyable{
     private int takeOffTime;
 
     Plane( String brand, int takeOffTime){
@@ -19,6 +19,11 @@ public class Plane  extends Vehicle{
         System.out.println("A plane with take off time " + takeOffTime);
     }
 
+    @Override
+    public boolean fly() {
+        System.out.print("flies fast ");
+        return true;
+    }
     public int getTakeOffTime() {
         return takeOffTime;
     }

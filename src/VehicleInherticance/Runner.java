@@ -1,5 +1,8 @@
 package VehicleInherticance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Runner {
     public static void main(String[] args) {
         Car car1 = new Car("audi", 4);
@@ -15,7 +18,7 @@ public class Runner {
         motorbike1.displayDetails();
         System.out.println(plane1.toString());
 */
-        garage1.addVehicle(car1);
+        /*garage1.addVehicle(car1);
         garage1.addVehicle(plane1);
         garage1.addVehicle(motorbike1);
         garage1.displayVehiclesInside();
@@ -27,7 +30,18 @@ public class Runner {
         garage1.bill();
         System.out.println(car1.getPrice());
         garage1.removeVehicleByType("Car");
-        garage1.displayVehiclesInside();
+        garage1.displayVehiclesInside();*/
+        List<Flyable> flyables = new ArrayList<>();
+
+        Bird b1 = new Bird();
+        Plane p1 = new Plane("idk", 9);
+
+        flyables.add(b1);
+        flyables.add(p1);
+
+        for(Flyable f: flyables){
+            System.out.println(f.fly());
+        }
 
     }
 }

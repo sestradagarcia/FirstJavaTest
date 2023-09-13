@@ -17,6 +17,10 @@ public class Car  extends Vehicle{
         super.displayDetails();
         System.out.println("A car with " + seats + " seats");
     }
+    @Override
+    public double calcBill(){
+        return 120.0;
+    }
 
     public int getSeats() {
         return seats;

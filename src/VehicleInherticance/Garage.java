@@ -25,7 +25,7 @@ public class Garage {
         }
     }
 
-    public void bill() {
+    /*public void bill() {
         for (Vehicle v : vehicles) {
             if (v instanceof Car) {
                 v.setPrice(2000 * ((Car) v).getSeats());
@@ -35,7 +35,7 @@ public class Garage {
                 v.setPrice(10000 * 200000);
             }
         }
-    }
+    }*/
 
     public void removeVehicleByType(String className ) {
         vehicles.removeIf(vehicle -> (vehicle.getClass().getSimpleName()).equals(className));
